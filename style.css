@@ -1,0 +1,483 @@
+/*
+Theme Name: dub minimalism
+Theme URI: http://www.danielbachhuber.com/projects/wordpress/dub-minimalism
+Description: Simply minimal
+Version: 0.3
+Author: Daniel Bachhuber
+Author URI: http://www.danielbachhuber.com/
+
+*/
+
+* { 
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #FFFFFF;
+	color: #333333;
+	letter-spacing: .1px;
+}
+
+a {
+	color: #005CB8;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	background-color: #f3f3f3;	
+}
+
+a img, img a {
+	border: none;
+}
+
+blockquote {
+	color: #666666;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+code {
+	font-family: 'Courier New', Courier;
+}
+
+.wrap {
+	margin-left: auto;
+	margin-right: auto;	
+	width: 860px;
+}
+	
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  
+}
+
+h5 {
+  
+}
+
+#topHat {
+  background-color: #CBCBCB;
+  font-size: 15px;
+  color: #666666;
+}
+
+#topHat ul {
+  list-style-type: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#topHat ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#topHat ul li.first {
+  margin-right: 45px;
+}
+
+#topHat ul li a {
+  color: #999999;
+}
+
+#topHat ul li a.active {
+  color: #005CB8;
+}
+
+#topHat ul li a:hover {
+  background-color: #CBCBCB;
+  color: #005CB8;
+}
+
+#content {
+	width: 600px;
+	float: left;
+	margin-top: 40px;
+}
+
+#content h2 {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#content h2 span.date {
+  float: right;
+  width: 150px;
+  text-align: right;
+  color: #999999;
+}
+
+#content h2 a, #content h3 a, #content h4 a {
+  color: #333333;
+}
+
+#content h2 a:hover, #content h3 a:hover, #content h4 a:hover {
+  color: #005CB8;
+}
+
+.post {
+  margin-bottom: 40px;
+}
+
+#content .entry {
+  font-size: 14px;
+  line-height: 22px;
+	color: #222222;
+}
+
+#content .entry h3 {
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+
+#content .entry a {
+  
+}
+
+#content .entry p {
+  margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.entry p:first-child {
+	
+}
+
+.entry ol, .entry ul {
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: 1em;
+}
+
+.entry ul {
+	list-style-type: square;
+}
+
+.entry ol li, .entry ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.tags {
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.tags ul {
+	list-style-type: none;
+}
+
+.tags li {
+	display: inline;
+	margin-right: 15px;
+}
+
+.tags li a {
+  color: #999999;
+}
+
+.tags li a:hover {
+	text-decoration: none;
+	color: #005CB8;
+	background-color: #FFFFFF;
+}
+
+#footer {
+  background-color: #CBCBCB;
+  min-height: 200px;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.commentlist li .avatar { 
+	float: left;
+	margin-top: .3em;
+	border: 1px solid #A3A3A3;
+	padding: .2em;
+}
+
+.commentlist {
+	padding: 0;
+}
+
+.commentlist li {
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 2em;
+	list-style: none;
+}
+
+.commentlist p {
+	margin-left: 5.5em;
+	font-size: 12px;
+	line-height: 17px;
+	margin-bottom: .6em;
+}
+
+#commentform p {
+	margin: 5px 0;
+}
+
+.commentmetadata {
+	margin-left: 6.5em;
+}
+
+acronym, abbr, span.caps {
+	font-size: 0.9em;
+	letter-spacing: .07em;
+}
+
+#footer {
+	padding: 0 0 0 45px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+}
+	
+#sidebar {
+	padding: 60px 0 10px 0;
+	margin-left: 640px;
+	width: 220px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #666666;
+}
+
+#sidebar h2 {
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li {
+	list-style-type: none;
+	margin-bottom: 1.5em;
+}
+
+#sidebar #about_box {
+	margin-top: .5em;
+}
+
+#sidebar #social ul {
+	min-height: 34px;
+	margin-bottom: 0;
+}
+
+#sidebar #social ul li {
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 0 !important;
+}
+
+.google-search-button {
+	margin-left: .5em;
+}
+
+.widget_publish2 div {
+	padding-top: .3em;
+}
+
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px ;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+  float: left
+}
+
+#sidebar p {
+	margin-bottom: 10px;
+}
+
+#sidebar ul li#publish2 ul li {
+	margin-bottom: 0;
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 0;
+ 	cursor: pointer;
+ 	color: #FFFFFF;
+ 	background-color: #666666;
+ 	border: none;
+}
+
+#commentform p.subscribe-to-comments {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+textarea {
+	font-family: Arial, Helvetica, Sans-Serif;
+ 	font-size:1em;
+ 	font-weight: normal;
+}
+
+#searchsubmit 
+ {
+ 	cursor: pointer;
+ 	text-decoration:none;
+ }
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.nocomments {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar form {
+	margin: 0;
+	}
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #eee;
+	}
+
+.hidden {
+	display: none;
+	}
+
+.navigation {
+	display: block;
+	margin-top: 1em;
+	min-height: 1.5em;
+	}
+/* End Various Tags & Classes*/
+
+
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #eee;
+	background-color: #fff;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0px 5px;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
+
+
+/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
+	It won't be a stylish marriage, I can't afford a carriage.
+	But you'll look sweet upon the seat of a bicycle built for two." */
