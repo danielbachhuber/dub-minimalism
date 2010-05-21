@@ -16,6 +16,8 @@
 		<title><?php the_title(); ?></title>
 	<? } else if (is_tag()) { ?> 
 		<title>Tagged '<?php single_tag_title(); ?>' - Daniel Bachhuber</title>
+	<? } else if (is_404()) { ?> 
+		<title>404 page collection</title>		
 	<?php } else { ?>
 		<title>Daniel Bachhuber</title>
 	<?php }?>
