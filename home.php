@@ -3,6 +3,8 @@
 <div class="wrap">
 	
 	<div id="main">
+	  
+	  <?php get_sidebar(); ?>
 
 	<div id="content">
 
@@ -32,18 +34,19 @@
 
 		<?php endwhile; ?>
 
-	<?php else : ?>
+	  <?php else : ?>
 
-		<h2 class="center">Not found</h2>
+		<h2>Not found</h2>
 		<p class="center"><?php _e('Sorry, but you are looking for something that isn&#8217;t here.', 'minimalism'); ?></p>
 
-	<?php endif; ?>
+	  <?php endif; ?>
+	
+	  <div id="pagination"><span class="right"><?php previous_posts_link('Newer Posts'); ?></span><span class="left"><?php next_posts_link('Older Posts'); ?></span></div>
 
 	</div>
 
-<?php get_sidebar(); ?>
+  </div><!-- /main -->
 
-</div><!-- /main -->
 </div><!-- /wrap -->
 
 <?php get_footer(); ?>

@@ -54,6 +54,7 @@ code {
 	
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
+	margin:0;
 }
 
 h1 {
@@ -61,7 +62,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h3 {
@@ -113,16 +114,18 @@ h5 {
   color: #005CB8;
 }
 
+#main {
+  padding-bottom: 50px;
+}
+
 #content {
 	width: 600px;
-	float: left;
-	margin-top: 40px;
+	padding-top: 30px;
 }
 
 #content h2 {
-	font-size: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #content h2 span.date {
@@ -130,6 +133,7 @@ h5 {
   width: 150px;
   text-align: right;
   color: #999999;
+  font-weight: lighter;
 }
 
 #content h2 a, #content h3 a, #content h4 a {
@@ -141,7 +145,7 @@ h5 {
 }
 
 .post {
-  margin-bottom: 40px;
+  padding-bottom: 15px;
 }
 
 #content .entry {
@@ -208,9 +212,99 @@ h5 {
 	background-color: #FFFFFF;
 }
 
+#pagination {
+	padding-top: 15px;
+	font-size: 14px;
+}
+
+#pagination span.left {
+	text-align: left;
+}
+
+#pagination span.right {
+	float: right;
+}
+
 #footer {
   background-color: #CBCBCB;
   min-height: 200px;
+}
+
+#commentform p {
+	margin: 5px 0;
+}
+
+#footer {
+	padding: 0 0 0 45px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+}
+	
+#sidebar {
+  float: right;
+	padding: 40px 0 10px 0;
+	width: 220px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #666666;
+}
+
+#sidebar h2 {
+	padding-top: 5px;
+	padding-bottom: 3px;
+	font-size: 16px;
+}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li {
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+#sidebar #about_box {
+	margin-top: .5em;
+}
+
+#sidebar #social ul {
+	min-height: 34px;
+	margin-bottom: 0;
+}
+
+#sidebar #social ul li {
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 0 !important;
+}
+
+.google-search-button {
+	margin-left: .5em;
+}
+
+.widget_publish2 div {
+	padding-top: .3em;
+}
+
+div#comments {
+  line-height: 17px;
+	font-size: 12px;
+}
+
+div#comments h3 {
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+
+div#comments .meta {
+	margin-left: 65px;
 }
 
 .commentlist li, #commentform input, #commentform textarea {
@@ -238,88 +332,11 @@ h5 {
 	list-style: none;
 }
 
-.commentlist p {
-	margin-left: 5.5em;
-	font-size: 12px;
-	line-height: 17px;
-	margin-bottom: .6em;
+div#comments .commentlist p {
+	margin-left: 65px;
+  margin-bottom: 5px;
 }
 
-#commentform p {
-	margin: 5px 0;
-}
-
-.commentmetadata {
-	margin-left: 6.5em;
-}
-
-acronym, abbr, span.caps {
-	font-size: 0.9em;
-	letter-spacing: .07em;
-}
-
-#footer {
-	padding: 0 0 0 45px;
-	margin: 0 auto;
-	clear: both;
-}
-
-#footer p {
-	margin: 0;
-	padding: 20px 0;
-}
-	
-#sidebar {
-	padding: 60px 0 10px 0;
-	margin-left: 640px;
-	width: 220px;
-	font-size: 12px;
-	line-height: 17px;
-	color: #666666;
-}
-
-#sidebar h2 {
-	margin-top: 5px;
-	font-size: 16px;
-}
-
-#sidebar ul, #sidebar ul ol {
-	margin: 0;
-	padding: 0;
-}
-
-#sidebar ul li {
-	list-style-type: none;
-	margin-bottom: 1.5em;
-}
-
-#sidebar #about_box {
-	margin-top: .5em;
-}
-
-#sidebar #social ul {
-	min-height: 34px;
-	margin-bottom: 0;
-}
-
-#sidebar #social ul li {
-	float: left;
-	margin-right: 4px;
-	margin-bottom: 0 !important;
-}
-
-.google-search-button {
-	margin-left: .5em;
-}
-
-.widget_publish2 div {
-	padding-top: .3em;
-}
-
-h3.comments {
-	padding: 0;
-	margin: 40px auto 20px ;
-	}
 
 /*	Using 'class="alignright"' on an image will (who would've
 	thought?!) align the image to the right. And using 'class="centered',
@@ -418,7 +435,7 @@ textarea {
 
 #sidebar form {
 	margin: 0;
-	}
+}
 
 
 

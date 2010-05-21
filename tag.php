@@ -3,6 +3,8 @@
 <div class="wrap">
 	
 	<div id="main">
+	  
+	  <?php get_sidebar(); ?>
 
 	<div id="content">
 
@@ -25,7 +27,7 @@
 				<h2><span class="date"><?php echo $post_date; ?></span><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
 				<div class="entry">
-					<?php the_content(); ?>
+					<?php the_excerpt(); ?>
 				</div>
 
 				<div class="tags"><?php the_tags('<ul><li>', '</li><li>', '</li></ul>'); ?></div>
@@ -36,15 +38,16 @@
 
 	<?php else : ?>
 
-		<h2 class="center">Not found</h2>
+		<h2>Not found</h2>
 
 	<?php endif; ?>
+	
+	  <div id="pagination"><span class="right"><?php previous_posts_link('Newer Posts'); ?></span><span class="left"><?php next_posts_link('Older Posts'); ?></span></div>
 
 	</div>
 
-<?php get_sidebar(); ?>
-
-</div><!-- /main -->
+  </div><!-- /main -->
+  
 </div><!-- /wrap -->
 
 <?php get_footer(); ?>

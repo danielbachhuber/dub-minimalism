@@ -20,7 +20,10 @@
 <!-- You can start editing here. -->
 
 <?php if ($comments) : ?>
-	<h3 id="comments"><?php comments_number('No comment','One comment', '% comments');?></h3>
+  
+  <div id="comments">
+  
+	  <h3><?php comments_number('No comment','One comment', '% comments');?></h3>
 
 	<ol class="commentlist">
 
@@ -31,7 +34,7 @@
 			
 			<?php comment_text(); ?>
 
-			<div class="commentmetadata"><?php comment_author_link(); ?> on <a href="#comment-<?php comment_ID() ?>"><?php comment_date('F jS, Y'); ?></a>
+			<div class="meta"><?php comment_author_link(); ?> on <a href="#comment-<?php comment_ID() ?>"><?php comment_date('F jS, Y'); ?></a>
 			
 			<?php if ($comment->comment_approved == '0') : ?>
 			<em>Your comment is awaiting moderation</em>
@@ -71,6 +74,8 @@
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
 <?php if ( $user_ID ) : ?>
 
 <p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>.', 'minimalism'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account', 'minimalism'); ?>"><?php _e('Log out &raquo;', 'minimalism'); ?></a></p>
@@ -88,11 +93,7 @@
 
 <?php endif; ?>
 
-<!--<p><small><?php printf(__('<strong>XHTML:</strong> You can use these tags: <code>%s</code>', 'minimalism'), allowed_tags()); ?></small></p>-->
-
-<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
-
-<p><input name="submit" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'minimalism'); ?>" />
+<p id="submit"><input name="submit" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'minimalism'); ?>" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 </p>
 <?php do_action('comment_form', $post->ID); ?>
@@ -100,5 +101,7 @@
 </form>
 
 <?php endif; // If registration required and not logged in ?>
+
+</div>
 
 <?php endif; // if you delete this the sky will fall on your head ?>

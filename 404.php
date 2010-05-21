@@ -3,6 +3,8 @@
 <div class="wrap">
 	
 	<div id="main">
+	  
+	  <?php get_sidebar(); ?>
 
 	<div id="content">
 		
@@ -31,11 +33,9 @@
 	  </div>
 	
   </div>
+  
+  </div><!-- /#main -->
 
-<?php get_sidebar(); ?>
-
-</div>
-
-</div>
+</div><!-- /.wrap -->
 
 <?php get_footer(); ?>
