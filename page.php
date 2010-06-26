@@ -3,6 +3,8 @@
 <div class="wrap">
 	
 	<div id="main">
+	  
+	  <?php get_sidebar(); ?>
 
 	<div id="content">
 
@@ -19,10 +21,10 @@
 		<?php endwhile; endif; ?>
 		
 	</div>
+	
+	<div style="clear:both;"></div>
 
 </div>
-
-<?php get_sidebar(); ?>
 
 </div>
 

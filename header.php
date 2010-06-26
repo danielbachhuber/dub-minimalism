@@ -30,7 +30,7 @@
 <div id="topHat">
   <div class="wrap">
     <ul>
-      <li class="first">Daniel Bachhuber</li>
+      <li class="first"><a href="<?php bloginfo('url'); ?>">Daniel Bachhuber</a></li>
       <li><a class="active" href="<?php bloginfo('url'); ?>">weblog</a></li>
       <li><a href="<?php bloginfo('url'); ?>/reading/">links</a></li>
       <li><a href="http://status.danielbachhuber.com/">status</a></li>

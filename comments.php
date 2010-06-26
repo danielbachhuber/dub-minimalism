@@ -57,8 +57,6 @@
 		<!-- If comments are open, but there are no comments. -->
 
 	 <?php else : // comments are closed ?>
-		<!-- If comments are closed. -->
-		<p class="nocomments"><?php _e('Comments are closed.', 'minimalism'); ?></p>
 
 	<?php endif; ?>
 <?php endif; ?>
@@ -83,19 +81,20 @@
 <?php else : ?>
 
 <p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="author"><small><?php _e('Name', 'minimalism'); ?> <?php if ($req) _e("(required)", "kubrick"); ?></small></label></p>
+<label for="author">Name (required)</label></p>
 
 <p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="email"><small><?php _e('Mail (will not be published)', 'minimalism'); ?> <?php if ($req) _e("(required)", "kubrick"); ?></small></label></p>
+<label for="email">Email (required, will not be published)</label></p>
 
 <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
-<label for="url"><small><?php _e('Website', 'minimalism'); ?></small></label></p>
+<label for="url">Website</label></p>
 
 <?php endif; ?>
 
-<p id="submit"><input name="submit" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'minimalism'); ?>" />
+<p id="submitWrap"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 </p>
+
 <?php do_action('comment_form', $post->ID); ?>
 
 </form>
