@@ -46,6 +46,18 @@ code {
 	font-family: 'Courier New', Courier;
 }
 
+form input[type=text], form textarea {
+  border: solid 1px #999999;
+  padding: 5px;
+}
+
+form input[type=text]:focus, form textarea:focus {
+	border: solid 1px #005CB8;
+	outline: solid 1px #f3f3f3;
+	color: #000000;
+}
+
+
 .wrap {
 	margin-left: auto;
 	margin-right: auto;	
@@ -99,6 +111,10 @@ h5 {
 
 #topHat ul li.first {
   margin-right: 45px;
+}
+
+#topHat ul li.first a {
+  color: #666666;
 }
 
 #topHat ul li a {
@@ -161,6 +177,11 @@ h5 {
 
 #content .entry a {
   
+}
+
+#content .entry img.size-large {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #content .entry p {
@@ -227,22 +248,20 @@ h5 {
 
 #footer {
   background-color: #CBCBCB;
-  min-height: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #commentform p {
 	margin: 5px 0;
 }
 
-#footer {
-	padding: 0 0 0 45px;
-	margin: 0 auto;
-	clear: both;
-}
-
 #footer p {
-	margin: 0;
-	padding: 20px 0;
+	font-size: 30px;
+	color: #999999;
+	font-style: italic;
+	font-weight: lighter;
+	padding: 0;
 }
 	
 #sidebar {
@@ -308,8 +327,7 @@ div#comments .meta {
 }
 
 .commentlist li, #commentform input, #commentform textarea {
-  font-size: 1em;
-  line-height: 1.4em;
+  font-size: 12px;
 }
 
 .commentlist li .avatar { 
@@ -389,21 +407,29 @@ ol li, #sidebar ul ol li {
 
 #commentform input {
 	width: 170px;
-	padding: 2px;
 	margin: 5px 5px 1px 0;
-	}
+}
 
 #commentform textarea {
 	width: 100%;
-	padding: 2px;
-	}
+}
+
+#commentform #submitWrap {
+  padding-top: 5px;
+}
 
 #commentform #submit {
 	margin: 0;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
  	cursor: pointer;
  	color: #FFFFFF;
- 	background-color: #666666;
+ 	background-color: #005CB8;
  	border: none;
+ 	width: auto;
+ 	overflow: visible;
 }
 
 #commentform p.subscribe-to-comments {
