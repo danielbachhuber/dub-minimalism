@@ -33,6 +33,7 @@ a:hover {
 
 a img, img a {
 	border: none;
+	padding: none;
 }
 
 blockquote {
@@ -274,9 +275,8 @@ h5 {
 }
 
 #sidebar h2 {
-	padding-top: 5px;
-	padding-bottom: 3px;
-	font-size: 16px;
+	margin-bottom: 10px;
+	font-size: 14px;
 }
 
 #sidebar ul, #sidebar ul ol {
@@ -302,6 +302,15 @@ h5 {
 	float: left;
 	margin-right: 4px;
 	margin-bottom: 0 !important;
+}
+
+#sidebar .widget_flickrRSS img {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#sidebar .widget_flickrRSS a:hover {
+	background-color: #FFFFFF;
 }
 
 .google-search-button {

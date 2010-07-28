@@ -34,7 +34,7 @@
       <li><a class="active" href="<?php bloginfo('url'); ?>">weblog</a></li>
       <li><a href="<?php bloginfo('url'); ?>/reading/">links</a></li>
       <li><a href="http://status.danielbachhuber.com/">status</a></li>
-      <li><a href="#">images</a></li>
+      <li><a href="http://www.flickr.com/photos/danielbachhuber/">images</a></li>
     </ul>
   </div>
 </div>
